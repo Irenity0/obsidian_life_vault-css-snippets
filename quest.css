@@ -1,0 +1,19 @@
+.quest-type {
+    /* color: #fc4949; */
+    color: #ff6d5d;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.quest-name {
+    /* color: #ffff00; */
+    color: #ffd85a;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.type {
+    color: #59cf65 ;
+    font-size: medium;
+    /* color: #5d83ff ; */
+}

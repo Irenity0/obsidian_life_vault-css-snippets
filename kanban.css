@@ -1,0 +1,33 @@
+.kanban-plugin__lane {
+    background-color: #071331;
+    border: 1px solid #6F9AC8;
+}
+
+.kanban-plugin__item-title-wrapper {
+    /* background-color: #2051A3; */
+    background-color: #2050a3b3;
+    border: 2px solid #6F9AC8;
+}
+
+li,p {
+    font-size: medium;
+}
+
+.kanban-plugin__horizontal,
+.kanban-plugin__board {
+    background-color: #030717;
+}
+
+.kanban-plugin__lane-title {
+    text-align: center;
+}
+
+
+
+/* .kanban-plugin__board>div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+} */
+

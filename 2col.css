@@ -1,0 +1,62 @@
+/* Updated 2023-11-02 */
+
+.fifty {
+    font-family: inherit;
+}
+
+.fifty .markdown-preview-section {
+    max-width: 100%;
+}
+
+/* Title at top of the document */
+.fifty .markdown-preview-section .title {
+    top: 60px;
+    position: absolute;
+    font-size: 26px !important;
+    font-weight: bolder;
+    letter-spacing: 8px;
+}
+
+.fifty h1 {
+    /* border-top-style: dashed !important; */
+    border-width: 1px !important;
+    padding-top: 30px !important;
+}
+
+
+/* Get rid of the parent bullet */
+.fifty div.markdown-preview-section > div > ul > li > .list-bullet {
+    display: none !important;
+}
+
+/* Remove the indentation guide lines */
+.fifty.markdown-rendered.show-indentation-guide li > ul::before,
+.fifty.markdown-rendered.show-indentation-guide li > ol::before {
+  display: none !important;
+}
+
+div.markdown-preview-section > div > ul.has-list-bullet > li {
+    padding-left: -36px !important;
+}
+
+.fifty div > ul {
+    list-style: none;
+    display: flex;
+    column-gap: 60px;
+    flex-flow: row wrap;
+}
+
+.fifty div > ul > li {
+    list-style: none; 
+    min-width: 250px;
+    width: 45%;
+}
+
+/* Dataview support */
+.fifty ul.dataview {
+    row-gap: 0px !important;
+}
+
+.has-list-bullet > li {
+    list-style: none !important;
+}

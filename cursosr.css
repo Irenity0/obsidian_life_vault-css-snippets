@@ -1,0 +1,52 @@
+/* iAWriter-ish style. */
+.cursorWrapper .x-cursor {
+    opacity: 1;
+    background: white;
+    width: 8px;
+    left: -1px;
+    top: calc( -6px - var(--header-height));
+    height: calc(12px + var(--cursor-height));
+    transition: opacity;
+}
+
+/* Disable movement effect */
+.cursorWrapper .x-cursor::after {
+    display: none;
+}
+
+.cm-editor * {
+    caret-color: transparent !important;
+}
+
+.cm-cursorLayer {
+    animation: none !important;
+    visibility: hidden !important;
+}
+
+/* Blinking */
+.cursorWrapper .x-cursor0,
+.cursorWrapper .x-cursor1 {
+    animation: blink1 1s 0s both infinite;
+}
+
+@keyframes blink1 {
+    0% {
+        opacity: 1;
+    }
+
+    45% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

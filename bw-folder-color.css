@@ -1,0 +1,57 @@
+/* Minimalist Colored Folders (title only)
+
+Adapted from Lithou and pbhopeful by prrtzt
+
+This will allow you to add colors to the top level folders in your vault.
+Only the top level folders will have a background, not their content.
+Colors have to be in R, G, B, which allows you to apply an opacity setting. You can change all of that below.
+
+
+*/
+
+:root{
+    /* Folder colors */
+    /* --Fold1: 24, 26, 46;
+    --Fold2: 250, 249, 246;  */
+
+    /* --Fold1: 23, 97, 34;
+    --Fold2: 23, 97, 34; */
+
+    --Fold1: 16, 69, 175;
+    --Fold2: 16, 69, 175;
+
+
+    /* Opacity setting */
+    --bgFoldOpacity: 0.25;
+	
+    /* Margins and padding */
+    --foldBgPad: 5px;
+    --foldBgMar: 5px;
+}
+
+/* Folder Background Colors */        
+
+.nav-files-container > div > .nav-folder:nth-child(1n+2) > .nav-folder-title {
+    background-color: rgba(var(--Fold1), var(--bgFoldOpacity));
+    border-radius: 5px; 
+    padding-top:var(--foldBgPad); 
+    padding-bottom: var(--foldBgPad); 
+    margin-top: var(--foldBgMar); 
+    margin-bottom: var(--foldBgMar);
+}
+.nav-files-container > div > .nav-folder:nth-child(2n+3) > .nav-folder-title {
+    background-color: rgba(var(--Fold2), 
+    var(--bgFoldOpacity));
+    border-radius: 5px; 
+    padding-top:var(--foldBgPad); 
+    padding-bottom: var(--foldBgPad); 
+    margin-top: var(--foldBgMar); 
+    margin-bottom: var(--foldBgMar);
+} 
+
+.tree-item .nav-folder  {
+    background-color: rgba(var(--Fold1), var(--bgFoldOpacity));
+    border-radius: 5px; 
+    margin-top: var(--foldBgMar); 
+    margin-bottom: var(--foldBgMar);
+    }

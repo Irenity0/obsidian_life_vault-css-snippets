@@ -1,0 +1,18 @@
+.workspace-leaf-content .view-content {
+    z-index: 0;
+  }
+  .workspace-leaf-content .view-content::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    background-image: url(https://i.pinimg.com/originals/71/73/bd/7173bd8ff29f2f3547551570999b4685.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    filter: brightness(70%) saturate(80%);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  } 
+  

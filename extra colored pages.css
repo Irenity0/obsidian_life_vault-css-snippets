@@ -1,0 +1,156 @@
+/*------------------------------------------------------------------------------
+                     extra-page Note Themes by CyanVoxel v1.0.5
+
+These are a set of 7 main CSS classes that can be used to apply individual color
+schemes to extra-page notes for each day of the week.
+To customize the colors for each day, just swamp out the colors values under
+the main "day of the week" classes.
+
+NOTE: By default, this snippet relies on the "Bai Jamjuree" or
+"JetBrainsMono Nerd Font Mono" fonts. If you don't wish to use these, then just
+change or remove those font-family lines from this snippet.
+                
+------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+  --highlight: #ffffff;
+  --primary: #aaaaaa;
+  --dark: #333333;
+}
+
+.extra-page {
+  --dark: var(--dark);
+  color: var(--highlight);
+  background-color: var(--dark);
+  --text-normal: var(--highlight);
+  --text-muted: var(--highlight);
+  --text-faint: var(--highlight);
+  --checklist-done-color: var(--highlight);
+  --metadata-label-text-color: var(--highlight);
+  --metadata-input-text-color: var(--highlight);
+  --tag-color: var(--dark);
+  --tag-background: var(--primary);
+  --hr-color: var(--primary);
+  --blockquote-border-color: var(--primary);
+  --interactive-accent: var(--primary);
+  --collapse-icon-color-collapsed: var(--primary);
+  --checkbox-color: var(--primary);
+  --checkbox-marker-color: var(--dark);
+  --checkbox-color-hover: var(--highlight);
+  --checkbox-border-color: var(--highlight);
+  --list-marker-color: var(--highlight);
+  --code-background: rgb(27, 27, 27);
+  --code-normal: var(--primary);
+
+  --background-modifier-border-focus: var(--primary);
+  --background-modifier-border: color-mix(in srgb, var(--highlight) 60%, transparent);
+  --background-modifier-hover: color-mix(in srgb, var(--highlight) 60%, transparent);
+  --pill-cover-hover: color-mix(in srgb, var(--highlight) 60%, transparent);
+}
+
+.rose-pine, .Rose-pine {
+  --highlight: #d8b5ba;
+  --primary: #c05a7a;
+  --dark: #201d2e;
+}
+.gruvbox, .Gruvbox {
+  --highlight: #ece4bc;
+  --primary: #bc5511;
+  --dark: #282828;
+}
+.solarized, .Solarized {
+  --highlight: #aedbfa;
+  --primary: #5e9cf3;
+  --dark: #002a36;
+}
+.sea, .Sea {
+  --highlight: #efbe6f;
+  --primary: #b2d0c6;
+  --dark: #1b4543;
+}
+.red, .Red {
+  --highlight: #ffffff;
+  --primary: #bd9b9f;
+  --dark: #681b25;
+}
+.orange, .Orange {
+  --highlight: #fedbcd;
+  --primary: #302643;
+  --dark: #bb574b;
+}
+.matcha, .Matcha{
+  --highlight: #0d2701;
+  --primary: #bdb576;
+  --dark: #69814dd0;
+}
+
+.extra-page :is(h1, .HyperMD-header.HyperMD-header-1) {
+  color: var(--primary);
+  font-size: 35px;
+  font-family: "JetBrainsMono Nerd Font Mono", "JetBrains Mono";
+  padding: 0 !important;
+}
+.extra-page :is(h2, .HyperMD-header.HyperMD-header-2) {
+  color: var(--primary);
+  font-size: 30px;
+  font-family: "JetBrainsMono Nerd Font Mono", "JetBrains Mono";
+  padding: 0 !important;
+}
+.extra-page :is(h3, .HyperMD-header.HyperMD-header-3) {
+  color: var(--primary);
+  font-size: 25px;
+  font-family: "JetBrainsMono Nerd Font Mono", "JetBrains Mono";
+  padding-top: 0;
+}
+.extra-page :is(h4, .HyperMD-header.HyperMD-header-4) {
+    color: var(--primary);
+    font-size: 22px;
+    font-family: "JetBrainsMono Nerd Font Mono", "JetBrains Mono";
+    padding: 0 !important;
+}
+.extra-page :is(h5, .HyperMD-header.HyperMD-header-5) {
+    color: var(--primary);
+    font-size: 20px;
+    font-family: "JetBrainsMono Nerd Font Mono", "JetBrains Mono";
+    padding-top: 0;
+  }
+.extra-page :is(h6, .HyperMD-header.HyperMD-header-6) {
+      color: var(--primary);
+      font-size: 18px;
+      font-family: "JetBrainsMono Nerd Font Mono", "JetBrains Mono";
+      padding: 0 !important;
+}
+
+.extra-page p {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.extra-page :is(a:link, .cm-hmd-internal-link) {
+  color: var(--primary);
+}
+.extra-page :is(a:hover, .cm-hmd-internal-link:hover) {
+  color: var(--highlight);
+}
+.extra-page hr {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+/* .extra-page img {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+} */
+
+:is(.rose-pine, .Rose-pine,
+.gruvbox, .Gruvbox,
+.solarized, .Solarized,
+.sea, .Sea,
+.red, .Red,
+.orange, .Orange,
+.matcha, .Matcha
+  )
+  svg {
+  color: color-mix(in srgb, var(--highlight) 60%, transparent);
+}
